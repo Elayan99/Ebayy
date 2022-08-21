@@ -1,7 +1,6 @@
 {
   "name": "ebayy",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
@@ -17,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/Elayan99/Ebayy/issues"
   },
-  "homepage": "https://github.com/Elayan99/Ebayy#readme"
+  "homepage": "https://github.com/Elayan99/Ebayy#readme",
+  "description": ""
 }
