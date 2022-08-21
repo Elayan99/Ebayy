@@ -9,6 +9,10 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.5.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Elayan99/Ebayy.git"
