@@ -38,7 +38,7 @@ const orderSchema = new mongoose.Schema(
     isPaid: { type: Boolean, default: false },
     paidAt: { type: Date },
     isDelivered: { type: Boolean, default: false },
-    delivereAt: { type: Date },
+    deliveredAt: { type: Date },
   },
   {
     timestamps: true,
@@ -46,5 +46,4 @@ const orderSchema = new mongoose.Schema(
 );
 
 const Order = mongoose.model("Order", orderSchema);
-
 export default Order;
