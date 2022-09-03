@@ -165,7 +165,6 @@ function App() {
         <main>
           <Container className="mt-3">
             <Routes>
-              <Route path="/" element={<HomeScreen />} />
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/search" element={<SearchScreen />} />
               <Route path="/cart" element={<CartScreen />} />
@@ -187,6 +186,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <OrderScreen />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/orderhistory"
+                element={
+                  <ProtectedRoute>
+                    <OrderHistoryScreen />
                   </ProtectedRoute>
                 }
               />
@@ -240,14 +247,7 @@ function App() {
                 }
               ></Route>
 
-              <Route
-                path="/orderhistory"
-                element={
-                  <ProtectedRoute>
-                    <OrderHistoryScreen />
-                  </ProtectedRoute>
-                }
-              />
+              <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>
         </main>
